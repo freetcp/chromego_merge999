@@ -1,3 +1,1 @@
-https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/3/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/config.json
-https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/singbox/config.json
+
