@@ -49,35 +49,11 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_21
-  type: hysteria
-  server: 195.154.184.5
-  port: 22787
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: US_hysteria_31
-  type: hysteria
-  server: 208.87.243.151
-  port: 38670
-  ports: 10000-20000
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: RU_hy_0
   type: hysteria
   server: 46.17.43.223
-  port: 64907
-  ports: 30000-40000
+  port: 12345
+  ports: 12345
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -101,34 +77,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: RU_hy_2
-  type: hysteria
-  server: 46.17.43.223
-  port: 12345
-  ports: 12345
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: RU_hy_3
-  type: hysteria
-  server: 46.17.43.223
-  port: 12345
-  ports: 12345
-  auth_str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: RU_hy2_0
   type: hysteria2
   server: 46.17.41.189
@@ -138,22 +86,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: RU_hy2_1
-  type: hysteria2
-  server: 46.17.41.189
-  port: 50717
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: RU_hy2_2
-  type: hysteria2
-  server: 46.17.41.189
-  port: 50717
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: RU_hy2_3
   type: hysteria2
   server: 46.17.41.189
   port: 50717
@@ -189,34 +121,6 @@ proxies:
   reality-opts:
     public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
     short-id: e12d7fdb
-- name: TW_reality_2
-  type: vless
-  server: 1.162.51.106
-  port: 37898
-  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
-    short-id: e12d7fdb
-- name: TW_reality_3
-  type: vless
-  server: 1.162.51.106
-  port: 37898
-  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
-    short-id: e12d7fdb
 proxy-groups:
 - name: 节点选择
   type: select
@@ -225,20 +129,12 @@ proxy-groups:
   - DIRECT
   - US_hysteria_01
   - FR_hysteria_11
-  - FR_hysteria_21
-  - US_hysteria_31
   - RU_hy_0
   - RU_hy_1
-  - RU_hy_2
-  - RU_hy_3
   - RU_hy2_0
   - RU_hy2_1
-  - RU_hy2_2
-  - RU_hy2_3
   - TW_reality_0
   - TW_reality_1
-  - TW_reality_2
-  - TW_reality_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -247,20 +143,12 @@ proxy-groups:
   proxies:
   - US_hysteria_01
   - FR_hysteria_11
-  - FR_hysteria_21
-  - US_hysteria_31
   - RU_hy_0
   - RU_hy_1
-  - RU_hy_2
-  - RU_hy_3
   - RU_hy2_0
   - RU_hy2_1
-  - RU_hy2_2
-  - RU_hy2_3
   - TW_reality_0
   - TW_reality_1
-  - TW_reality_2
-  - TW_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
