@@ -126,7 +126,6 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - DIRECT
   - US_hysteria_01
   - FR_hysteria_11
   - RU_hy_0
