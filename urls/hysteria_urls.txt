@@ -3,3 +3,5 @@ https://raw.githubusercontent.com/Alvin9999/pac2/master/hysteria/config.json
 https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/singbox/config.json
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/hysteria/1/config.json
 https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/hysteria/2/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/hysteria/3/config.json
+https://raw.githubusercontent.com/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ip/hysteria/4/config.json
