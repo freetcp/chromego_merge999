@@ -112,9 +112,9 @@ proxies:
   down: 55 Mbps
 - name: RU_hy_0
   type: hysteria
-  server: 46.17.43.223
-  port: 12345
-  ports: 12345
+  server: 185.22.155.71
+  port: 15424
+  ports: 30000-40000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -126,9 +126,9 @@ proxies:
   - h3
 - name: RU_hy_1
   type: hysteria
-  server: 46.17.43.223
-  port: 12345
-  ports: 12345
+  server: 185.22.155.71
+  port: 15424
+  ports: 30000-40000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
