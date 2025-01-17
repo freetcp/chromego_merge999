@@ -61,42 +61,19 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_ss_31
-  type: ss
-  server: 195.154.184.5
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: zcusjF2p7k2nogcIKtVQJ0J4oKM6uJZedy3xPENJScQ=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: h4vzmf4QZyJgTYAAn5ZHQnfKFUwjCph9VXMSj5o9DCU=
-    version: 3
-- name: FR_hysteria_32
+- name: FR_hysteria_31
   type: hysteria
-  server: 195.154.200.178
-  port: 10312
-  auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
+  server: 195.154.184.5
+  port: 22787
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: US_ss_41
-  type: ss
-  server: 108.181.24.77
-  port: 33449
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ASXmhqODZasnV777P2m33eQ9mCU5KXY86dXJQTuWFW8=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
-    version: 3
-- name: US_hysteria_42
+- name: US_hysteria_41
   type: hysteria
   server: 108.181.24.77
   port: 35862
@@ -331,10 +308,8 @@ proxy-groups:
   - US_hysteria_01
   - FR_hysteria_11
   - US_hysteria_21
-  - FR_ss_31
-  - FR_hysteria_32
-  - US_ss_41
-  - US_hysteria_42
+  - FR_hysteria_31
+  - US_hysteria_41
   - FR_hysteria_51
   - US_hysteria_61
   - RU_hy_0
@@ -362,10 +337,8 @@ proxy-groups:
   - US_hysteria_01
   - FR_hysteria_11
   - US_hysteria_21
-  - FR_ss_31
-  - FR_hysteria_32
-  - US_ss_41
-  - US_hysteria_42
+  - FR_hysteria_31
+  - US_hysteria_41
   - FR_hysteria_51
   - US_hysteria_61
   - RU_hy_0
