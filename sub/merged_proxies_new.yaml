@@ -76,10 +76,10 @@ proxies:
 - name: US_hysteria_41
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -102,10 +102,10 @@ proxies:
 - name: US_hysteria_61
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -171,14 +171,14 @@ proxies:
 - name: US_hy_6
   type: hysteria
   server: 108.181.24.77
-  port: 35862
-  ports: 40000-50000
+  port: 11512
+  ports: 20000-30000
   auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -223,10 +223,10 @@ proxies:
 - name: US_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: FR_hy2_4
   type: hysteria2
@@ -239,10 +239,10 @@ proxies:
 - name: US_hy2_5
   type: hysteria2
   server: 108.181.5.130
-  port: 7329
+  port: 43836
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: RU_reality_0
   type: vless
