@@ -243,11 +243,11 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: RU_reality_0
+- name: FR_reality_0
   type: vless
-  server: 185.22.153.75
-  port: 21315
-  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  server: 62.210.125.97
+  port: 65280
+  uuid: 5bf1ced2-27ad-4908-83db-0b1f9a4f6047
   network: tcp
   tls: true
   udp: true
@@ -255,8 +255,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
-    short-id: d019a9ad
+    public-key: 7NC6hW-P41pciUEhAylbleVf4a2ZStJVuJpjmZgp7iQ
+    short-id: 5628b8f0
 - name: RU_reality_1
   type: vless
   server: 185.22.153.75
@@ -323,7 +323,7 @@ proxy-groups:
   - US_hy2_3
   - FR_hy2_4
   - US_hy2_5
-  - RU_reality_0
+  - FR_reality_0
   - RU_reality_1
   - RU_reality_2
   - RU_reality_3
@@ -352,7 +352,7 @@ proxy-groups:
   - US_hy2_3
   - FR_hy2_4
   - US_hy2_5
-  - RU_reality_0
+  - FR_reality_0
   - RU_reality_1
   - RU_reality_2
   - RU_reality_3
