@@ -170,11 +170,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: US_hy_6
+- name: NL_hy_6
   type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -230,10 +230,10 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: FR_hy2_4
+- name: NL_hy2_4
   type: hysteria2
-  server: 195.154.33.70
-  port: 13861
+  server: 51.159.226.1
+  port: 61770
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -318,13 +318,13 @@ proxy-groups:
   - RU_hy_1
   - FR_hy_4
   - RU_hy_5
-  - US_hy_6
+  - NL_hy_6
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
   - FR_hy2_2
   - US_hy2_3
-  - FR_hy2_4
+  - NL_hy2_4
   - US_hy2_5
   - FR_reality_0
   - RU_reality_1
@@ -347,13 +347,13 @@ proxy-groups:
   - RU_hy_1
   - FR_hy_4
   - RU_hy_5
-  - US_hy_6
+  - NL_hy_6
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
   - FR_hy2_2
   - US_hy2_3
-  - FR_hy2_4
+  - NL_hy2_4
   - US_hy2_5
   - FR_reality_0
   - RU_reality_1
