@@ -66,7 +66,7 @@ proxies:
 - name: FR_hysteria_31
   type: hysteria
   server: 62.210.10.113
-  port: 11503
+  port: 55690
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -91,9 +91,8 @@ proxies:
 - name: FR_hysteria_51
   type: hysteria
   server: 195.154.200.178
-  port: 34911
+  port: 44557
   auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -103,13 +102,13 @@ proxies:
   down: 55 Mbps
 - name: RU_tuic_61
   server: 185.22.152.125
-  port: 59728
+  port: 13457
   type: tuic
-  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
-  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  uuid: 3d6ce949-101b-4e5d-8be8-a631481a9ebd
+  password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
@@ -217,7 +216,7 @@ proxies:
 - name: FR_hy2_2
   type: hysteria2
   server: 195.154.33.70
-  port: 13861
+  port: 59967
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -225,7 +224,7 @@ proxies:
 - name: US_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 43836
+  port: 15544
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -241,16 +240,16 @@ proxies:
 - name: US_hy2_5
   type: hysteria2
   server: 108.181.5.130
-  port: 43836
+  port: 15544
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: FR_reality_0
+- name: RU_reality_0
   type: vless
-  server: 62.210.125.97
-  port: 65280
-  uuid: 5bf1ced2-27ad-4908-83db-0b1f9a4f6047
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
@@ -258,8 +257,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: 7NC6hW-P41pciUEhAylbleVf4a2ZStJVuJpjmZgp7iQ
-    short-id: 5628b8f0
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
 - name: RU_reality_1
   type: vless
   server: 185.22.153.75
@@ -326,7 +325,7 @@ proxy-groups:
   - US_hy2_3
   - NL_hy2_4
   - US_hy2_5
-  - FR_reality_0
+  - RU_reality_0
   - RU_reality_1
   - RU_reality_2
   - RU_reality_3
@@ -355,7 +354,7 @@ proxy-groups:
   - US_hy2_3
   - NL_hy2_4
   - US_hy2_5
-  - FR_reality_0
+  - RU_reality_0
   - RU_reality_1
   - RU_reality_2
   - RU_reality_3
