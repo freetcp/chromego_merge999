@@ -39,7 +39,7 @@ proxies:
 - name: RU_hysteria_11
   type: hysteria
   server: 185.22.155.71
-  port: 24342
+  port: 10803
   auth_str: dongtaiwang.com
   alpn:
   - h3
@@ -114,8 +114,8 @@ proxies:
 - name: RU_hy_0
   type: hysteria
   server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  port: 10803
+  ports: 10803
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -128,8 +128,8 @@ proxies:
 - name: RU_hy_1
   type: hysteria
   server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  port: 10803
+  ports: 10803
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -153,11 +153,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: RU_hy_5
+- name: NL_hy_5
   type: hysteria
-  server: 185.22.155.71
-  port: 24342
-  ports: 24342
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -197,16 +197,16 @@ proxies:
   - h3
 - name: RU_hy2_0
   type: hysteria2
-  server: 46.17.41.189
-  port: 51224
+  server: 46.29.163.171
+  port: 18626
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
 - name: RU_hy2_1
   type: hysteria2
-  server: 46.17.41.189
-  port: 51224
+  server: 46.29.163.171
+  port: 18626
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -243,11 +243,11 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: RU_reality_0
+- name: US_reality_0
   type: vless
-  server: 185.22.153.75
-  port: 21315
-  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  server: 108.181.3.68
+  port: 19873
+  uuid: 288eab91-a2a9-4099-bcfd-ae057ec0d56e
   network: tcp
   tls: true
   udp: true
@@ -255,13 +255,13 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
-    short-id: d019a9ad
-- name: RU_reality_1
+    public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
+    short-id: 694212ed
+- name: US_reality_1
   type: vless
-  server: 185.22.153.75
-  port: 21315
-  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  server: 108.181.3.68
+  port: 19873
+  uuid: 288eab91-a2a9-4099-bcfd-ae057ec0d56e
   network: tcp
   tls: true
   udp: true
@@ -269,8 +269,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
-    short-id: d019a9ad
+    public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
+    short-id: 694212ed
 - name: RU_reality_2
   type: vless
   server: 185.22.155.105
@@ -314,7 +314,7 @@ proxy-groups:
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
-  - RU_hy_5
+  - NL_hy_5
   - NL_hy_6
   - US_hy_7
   - RU_hy2_0
@@ -323,8 +323,8 @@ proxy-groups:
   - US_hy2_3
   - NL_hy2_4
   - RU_hy2_5
-  - RU_reality_0
-  - RU_reality_1
+  - US_reality_0
+  - US_reality_1
   - RU_reality_2
   - RU_reality_3
 - name: 自动选择
@@ -343,7 +343,7 @@ proxy-groups:
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
-  - RU_hy_5
+  - NL_hy_5
   - NL_hy_6
   - US_hy_7
   - RU_hy2_0
@@ -352,8 +352,8 @@ proxy-groups:
   - US_hy2_3
   - NL_hy2_4
   - RU_hy2_5
-  - RU_reality_0
-  - RU_reality_1
+  - US_reality_0
+  - US_reality_1
   - RU_reality_2
   - RU_reality_3
 rules:
