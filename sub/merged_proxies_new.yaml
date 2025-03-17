@@ -47,7 +47,20 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: CN_vless_21
+- name: FR_tuic_21
+  server: 62.210.10.113
+  port: 22457
+  type: tuic
+  uuid: 083c4304-78e8-4702-b2ff-7dc899f74d90
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: CN_vless_31
   type: vless
   server: 207.170.66.131
   port: 53471
@@ -61,7 +74,48 @@ proxies:
     public-key: Q8tqbrM5oZEl53whhQ1zqblk7Ab-HKO4NZgeiSQDNA4
     short-id: f2eb5a1e
   client-fingerprint: chrome
-- name: FR_hysteria_31
+- name: RU_tuic_41
+  server: 185.22.155.105
+  port: 43516
+  type: tuic
+  uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+  password: f3ba3679-f2f4-465f-92a5-de320b775a88
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: CN_vless_51
+  type: vless
+  server: 207.170.66.147
+  port: 51399
+  uuid: 46d0a6f0-80a2-4a13-848f-7dee1fca12fe
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: DwCRezTZrOCjW_NE3Vlk4G2BH9oOap3hAbw-boIwkUQ
+    short-id: 9cbe8451
+  client-fingerprint: chrome
+- name: CN_vless_61
+  type: vless
+  server: 207.170.66.131
+  port: 53471
+  uuid: 93332c25-be6c-440a-9536-55a55de9b388
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: Q8tqbrM5oZEl53whhQ1zqblk7Ab-HKO4NZgeiSQDNA4
+    short-id: f2eb5a1e
+  client-fingerprint: chrome
+- name: FR_hysteria_71
   type: hysteria
   server: 62.210.10.113
   port: 55690
@@ -73,7 +127,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_tuic_41
+- name: US_tuic_81
   server: 108.181.5.131
   port: 34008
   type: tuic
@@ -86,7 +140,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_51
+- name: FR_hysteria_91
   type: hysteria
   server: 195.154.200.178
   port: 44557
@@ -98,7 +152,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: RU_tuic_61
+- name: RU_tuic_101
   server: 46.29.166.207
   port: 19988
   type: tuic
@@ -306,11 +360,15 @@ proxy-groups:
   - 自动选择
   - US_hysteria_01
   - RU_hysteria_11
-  - CN_vless_21
-  - FR_hysteria_31
-  - US_tuic_41
-  - FR_hysteria_51
-  - RU_tuic_61
+  - FR_tuic_21
+  - CN_vless_31
+  - RU_tuic_41
+  - CN_vless_51
+  - CN_vless_61
+  - FR_hysteria_71
+  - US_tuic_81
+  - FR_hysteria_91
+  - RU_tuic_101
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -335,11 +393,15 @@ proxy-groups:
   proxies:
   - US_hysteria_01
   - RU_hysteria_11
-  - CN_vless_21
-  - FR_hysteria_31
-  - US_tuic_41
-  - FR_hysteria_51
-  - RU_tuic_61
+  - FR_tuic_21
+  - CN_vless_31
+  - RU_tuic_41
+  - CN_vless_51
+  - CN_vless_61
+  - FR_hysteria_71
+  - US_tuic_81
+  - FR_hysteria_91
+  - RU_tuic_101
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
