@@ -60,18 +60,20 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: NL_hysteria_31
-  type: hysteria
-  server: 51.158.205.126
-  port: 36194
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: BE_vless_31
+  type: vless
+  server: 156.225.81.102
+  port: 16113
+  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
+    short-id: f3e00baf
+  client-fingerprint: chrome
 - name: NL_hysteria_41
   type: hysteria
   server: 51.158.205.126
@@ -84,21 +86,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: CN_vless_51
-  type: vless
-  server: 207.170.66.147
-  port: 51399
-  uuid: 46d0a6f0-80a2-4a13-848f-7dee1fca12fe
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: DwCRezTZrOCjW_NE3Vlk4G2BH9oOap3hAbw-boIwkUQ
-    short-id: 9cbe8451
-  client-fingerprint: chrome
-- name: NL_hysteria_61
+- name: NL_hysteria_51
   type: hysteria
   server: 51.158.205.126
   port: 36194
@@ -110,6 +98,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: BE_vless_61
+  type: vless
+  server: 156.225.81.102
+  port: 16113
+  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
+    short-id: f3e00baf
+  client-fingerprint: chrome
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.10.113
@@ -355,10 +357,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - NL_hysteria_31
+  - BE_vless_31
   - NL_hysteria_41
-  - CN_vless_51
-  - NL_hysteria_61
+  - NL_hysteria_51
+  - BE_vless_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -388,10 +390,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - NL_hysteria_31
+  - BE_vless_31
   - NL_hysteria_41
-  - CN_vless_51
-  - NL_hysteria_61
+  - NL_hysteria_51
+  - BE_vless_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
