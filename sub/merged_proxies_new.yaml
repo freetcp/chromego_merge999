@@ -60,18 +60,20 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: BE_hysteria_31
-  type: hysteria
+- name: BE_vless_31
+  type: vless
   server: 156.225.81.102
-  port: 22011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  port: 16113
+  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
+    short-id: f3e00baf
+  client-fingerprint: chrome
 - name: NL_hysteria_41
   type: hysteria
   server: 51.158.205.126
@@ -96,18 +98,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: BE_hysteria_61
-  type: hysteria
+- name: BE_vless_61
+  type: vless
   server: 156.225.81.102
-  port: 22011
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  port: 16113
+  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
+    short-id: f3e00baf
+  client-fingerprint: chrome
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.10.113
@@ -317,11 +321,11 @@ proxies:
   reality-opts:
     public-key: Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A
     short-id: 4b4d9d72
-- name: US_reality_2
+- name: BE_reality_2
   type: vless
-  server: 208.115.249.104
-  port: 63067
-  uuid: cc2272a3-0ddd-4c5a-bbb7-9a2079ac650d
+  server: 156.225.81.102
+  port: 16113
+  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
   network: tcp
   tls: true
   udp: true
@@ -329,8 +333,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: jqXZMbA5yqqAOQJa_7GAOOGK7qb_BUBXgG702ItdZRc
-    short-id: cb2c9c63
+    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
+    short-id: f3e00baf
 - name: RU_reality_3
   type: vless
   server: 185.22.155.105
@@ -353,10 +357,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - BE_hysteria_31
+  - BE_vless_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - BE_hysteria_61
+  - BE_vless_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -375,7 +379,7 @@ proxy-groups:
   - RU_hy2_5
   - US_reality_0
   - NL_reality_1
-  - US_reality_2
+  - BE_reality_2
   - RU_reality_3
 - name: 自动选择
   type: url-test
@@ -386,10 +390,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - BE_hysteria_31
+  - BE_vless_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - BE_hysteria_61
+  - BE_vless_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -408,7 +412,7 @@ proxy-groups:
   - RU_hy2_5
   - US_reality_0
   - NL_reality_1
-  - US_reality_2
+  - BE_reality_2
   - RU_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
