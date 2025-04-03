@@ -115,7 +115,7 @@ proxies:
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.10.113
-  port: 55690
+  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -140,7 +140,7 @@ proxies:
 - name: FR_hysteria_91
   type: hysteria
   server: 195.154.200.178
-  port: 44557
+  port: 46938
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
