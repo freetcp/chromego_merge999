@@ -321,11 +321,11 @@ proxies:
   reality-opts:
     public-key: Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A
     short-id: 4b4d9d72
-- name: BE_reality_2
+- name: NL_reality_2
   type: vless
-  server: 156.225.81.102
-  port: 16113
-  uuid: 9b04495c-caf6-4ece-895f-402f12a270a5
+  server: 51.158.205.126
+  port: 24957
+  uuid: ef1fdecb-e56f-4996-9b6a-da7ddb7f7c8d
   network: tcp
   tls: true
   udp: true
@@ -333,8 +333,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: gLFqVMVuAmp_TQJJyz0eEhh2jGiUY3973cOSEKG3cxc
-    short-id: f3e00baf
+    public-key: Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A
+    short-id: 4b4d9d72
 - name: RU_reality_3
   type: vless
   server: 185.22.155.105
@@ -379,7 +379,7 @@ proxy-groups:
   - RU_hy2_5
   - US_reality_0
   - NL_reality_1
-  - BE_reality_2
+  - NL_reality_2
   - RU_reality_3
 - name: 自动选择
   type: url-test
@@ -412,7 +412,7 @@ proxy-groups:
   - RU_hy2_5
   - US_reality_0
   - NL_reality_1
-  - BE_reality_2
+  - NL_reality_2
   - RU_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
