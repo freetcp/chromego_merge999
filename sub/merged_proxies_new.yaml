@@ -60,9 +60,9 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: DE_mieru_31
+- name: FR_mieru_31
   type: mieru
-  server: 1.694463.xyz
+  server: 62.210.6.186
   port: 8067
   transport: TCP
   username: dongtaiwang.com
@@ -91,9 +91,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: DE_mieru_61
+- name: FR_mieru_61
   type: mieru
-  server: 1.694463.xyz
+  server: 62.210.6.186
   port: 8067
   transport: TCP
   username: dongtaiwang.com
@@ -343,10 +343,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - DE_mieru_31
+  - FR_mieru_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - DE_mieru_61
+  - FR_mieru_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -376,10 +376,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - DE_mieru_31
+  - FR_mieru_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - DE_mieru_61
+  - FR_mieru_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
