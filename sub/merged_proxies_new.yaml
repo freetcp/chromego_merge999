@@ -234,18 +234,18 @@ proxies:
 - name: RU_hy2_0
   type: hysteria2
   server: 46.17.41.217
-  port: 4395
+  port: 64816
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: RU_hy2_1
   type: hysteria2
   server: 46.17.41.217
-  port: 4395
+  port: 64816
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 - name: FR_hy2_2
   type: hysteria2
