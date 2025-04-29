@@ -60,13 +60,18 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_mieru_31
-  type: mieru
-  server: 62.210.6.186
-  port: 8067
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+- name: VN_hysteria_31
+  type: hysteria
+  server: 123.30.149.21
+  port: 29597
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: NL_hysteria_41
   type: hysteria
   server: 51.158.205.126
@@ -91,13 +96,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_mieru_61
-  type: mieru
-  server: 62.210.6.186
-  port: 8067
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+- name: VN_hysteria_61
+  type: hysteria
+  server: 123.30.149.21
+  port: 29597
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: FR_hysteria_71
   type: hysteria
   server: 62.210.10.113
@@ -247,7 +257,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: FR_hy2_2
+- name: NL_hy2_2
   type: hysteria2
   server: hy2-1.694463.xyz
   port: 4489
@@ -343,10 +353,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - FR_mieru_31
+  - VN_hysteria_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - FR_mieru_61
+  - VN_hysteria_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -359,7 +369,7 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - FR_hy2_2
+  - NL_hy2_2
   - US_hy2_3
   - NL_hy2_4
   - RU_hy2_5
@@ -376,10 +386,10 @@ proxy-groups:
   - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
-  - FR_mieru_31
+  - VN_hysteria_31
   - NL_hysteria_41
   - NL_hysteria_51
-  - FR_mieru_61
+  - VN_hysteria_61
   - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
@@ -392,7 +402,7 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - FR_hy2_2
+  - NL_hy2_2
   - US_hy2_3
   - NL_hy2_4
   - RU_hy2_5
