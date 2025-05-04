@@ -157,11 +157,11 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: RU_hy_0
+- name: US_hy_0
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -171,11 +171,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: RU_hy_1
+- name: US_hy_1
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -361,8 +361,8 @@ proxy-groups:
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
-  - RU_hy_0
-  - RU_hy_1
+  - US_hy_0
+  - US_hy_1
   - FR_hy_4
   - NL_hy_5
   - NL_hy_6
@@ -394,8 +394,8 @@ proxy-groups:
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
-  - RU_hy_0
-  - RU_hy_1
+  - US_hy_0
+  - US_hy_1
   - FR_hy_4
   - NL_hy_5
   - NL_hy_6
