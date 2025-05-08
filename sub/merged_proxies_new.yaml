@@ -257,7 +257,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: NL_hy2_2
+- name: FR_hy2_2
   type: hysteria2
   server: hy2-1.694463.xyz
   port: 4489
@@ -361,7 +361,7 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - NL_hy2_2
+  - FR_hy2_2
   - US_hy2_3
   - NL_hy2_4
   - NL_reality_0
@@ -393,7 +393,7 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - NL_hy2_2
+  - FR_hy2_2
   - US_hy2_3
   - NL_hy2_4
   - NL_reality_0
