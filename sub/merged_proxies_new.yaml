@@ -157,6 +157,51 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: US_hysteria2_111
+  type: hysteria2
+  server: hyus2.freews.eu.org
+  port: 31218
+  tls: false
+  password: freetcp.02580258
+  skip-cert-verify: true
+  fast-open: false
+  ip-version: dual
+- name: SG_hysteria2_112
+  type: hysteria2
+  server: hysp.freews.eu.org
+  port: 49413
+  tls: false
+  password: freetcp.02580258
+  skip-cert-verify: true
+  fast-open: false
+  ip-version: dual
+- name: DE_hysteria2_113
+  type: hysteria2
+  server: hyde.freews.eu.org
+  port: 44262
+  tls: false
+  password: freetcp.02580258
+  skip-cert-verify: true
+  fast-open: false
+  ip-version: dual
+- name: JP_hysteria2_114
+  type: hysteria2
+  server: hyjp.freews.eu.org
+  port: 38445
+  tls: false
+  password: freetcp.02580258
+  skip-cert-verify: true
+  fast-open: false
+  ip-version: dual
+- name: US_hysteria2_115
+  type: hysteria2
+  server: hyus.freews.eu.org
+  port: 36726
+  tls: false
+  password: freetcp.02580258
+  skip-cert-verify: true
+  fast-open: false
+  ip-version: dual
 - name: RU_hy_0
   type: hysteria
   server: 185.22.155.71
@@ -353,6 +398,11 @@ proxy-groups:
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
+  - US_hysteria2_111
+  - SG_hysteria2_112
+  - DE_hysteria2_113
+  - JP_hysteria2_114
+  - US_hysteria2_115
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -385,6 +435,11 @@ proxy-groups:
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
+  - US_hysteria2_111
+  - SG_hysteria2_112
+  - DE_hysteria2_113
+  - JP_hysteria2_114
+  - US_hysteria2_115
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
