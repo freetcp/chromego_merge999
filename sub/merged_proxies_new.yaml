@@ -302,7 +302,15 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: NL_hy2_2
+- name: FR_hy2_2
+  type: hysteria2
+  server: 51.159.111.32
+  port: 31180
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: NL_hy2_3
   type: hysteria2
   server: hy2-1.694463.xyz
   port: 4489
@@ -310,7 +318,7 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: US_hy2_3
+- name: US_hy2_4
   type: hysteria2
   server: 108.181.5.130
   port: 57773
@@ -318,10 +326,10 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: US_hy2_4
+- name: RU_hy2_5
   type: hysteria2
-  server: 108.181.5.130
-  port: 57773
+  server: 46.17.41.5
+  port: 12904
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -411,9 +419,10 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - NL_hy2_2
-  - US_hy2_3
+  - FR_hy2_2
+  - NL_hy2_3
   - US_hy2_4
+  - RU_hy2_5
   - NL_reality_0
   - US_reality_1
   - RU_reality_2
@@ -448,9 +457,10 @@ proxy-groups:
   - US_hy_7
   - RU_hy2_0
   - RU_hy2_1
-  - NL_hy2_2
-  - US_hy2_3
+  - FR_hy2_2
+  - NL_hy2_3
   - US_hy2_4
+  - RU_hy2_5
   - NL_reality_0
   - US_reality_1
   - RU_reality_2
