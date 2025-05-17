@@ -25,17 +25,6 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: US_hysteria_01
-  type: hysteria
-  server: 208.87.243.151
-  port: 17549
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
 - name: RU_hysteria_11
   type: hysteria
   server: 185.22.155.71
@@ -100,18 +89,6 @@ proxies:
   type: hysteria
   server: 123.30.149.21
   port: 29597
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: FR_hysteria_71
-  type: hysteria
-  server: 62.210.10.113
-  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -395,14 +372,12 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
   - VN_hysteria_31
   - NL_hysteria_41
   - NL_hysteria_51
   - VN_hysteria_61
-  - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
@@ -433,14 +408,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - US_hysteria_01
   - RU_hysteria_11
   - FR_tuic_21
   - VN_hysteria_31
   - NL_hysteria_41
   - NL_hysteria_51
   - VN_hysteria_61
-  - FR_hysteria_71
   - US_tuic_81
   - FR_hysteria_91
   - US_hysteria_101
