@@ -25,7 +25,21 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: US_hysteria_01
+- name: US_mieru_01
+  type: mieru
+  server: 108.181.23.41
+  port: 28676
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: RU_mieru_11
+  type: mieru
+  server: 185.22.155.105
+  port: 25622
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: US_hysteria_21
   type: hysteria
   server: 208.87.243.151
   port: 17549
@@ -36,7 +50,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: RU_hysteria_11
+- name: RU_hysteria_31
   type: hysteria
   server: 185.22.155.71
   port: 10803
@@ -47,7 +61,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_tuic_21
+- name: FR_tuic_41
   server: 62.210.10.113
   port: 22457
   type: tuic
@@ -60,7 +74,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: VN_hysteria_31
+- name: VN_hysteria_51
   type: hysteria
   server: 123.30.149.21
   port: 29597
@@ -72,7 +86,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: NL_hysteria_41
+- name: NL_hysteria_61
   type: hysteria
   server: 51.158.205.126
   port: 36194
@@ -84,7 +98,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: NL_hysteria_51
+- name: NL_hysteria_71
   type: hysteria
   server: 51.158.205.126
   port: 36194
@@ -96,7 +110,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: VN_hysteria_61
+- name: VN_hysteria_81
   type: hysteria
   server: 123.30.149.21
   port: 29597
@@ -108,7 +122,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: FR_hysteria_71
+- name: FR_hysteria_91
   type: hysteria
   server: 62.210.10.113
   port: 22662
@@ -120,7 +134,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_tuic_81
+- name: US_tuic_101
   server: 108.181.5.131
   port: 34008
   type: tuic
@@ -133,7 +147,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: FR_hysteria_91
+- name: FR_hysteria_111
   type: hysteria
   server: 195.154.200.178
   port: 46938
@@ -145,7 +159,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria_101
+- name: US_hysteria_121
   type: hysteria
   server: 108.181.24.77
   port: 11512
@@ -157,7 +171,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria2_111
+- name: US_hysteria2_131
   type: hysteria2
   server: hyus2.freews.eu.org
   port: 31218
@@ -166,7 +180,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: SG_hysteria2_112
+- name: SG_hysteria2_132
   type: hysteria2
   server: hysp.freews.eu.org
   port: 49413
@@ -175,7 +189,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: DE_hysteria2_113
+- name: DE_hysteria2_133
   type: hysteria2
   server: hyde.freews.eu.org
   port: 44262
@@ -184,7 +198,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: JP_hysteria2_114
+- name: JP_hysteria2_134
   type: hysteria2
   server: hyjp.freews.eu.org
   port: 38445
@@ -193,7 +207,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: US_hysteria2_115
+- name: US_hysteria2_135
   type: hysteria2
   server: hyus.freews.eu.org
   port: 36726
@@ -376,21 +390,7 @@ proxies:
   reality-opts:
     public-key: qtqcKrPLXaN-jpo7Zs1_80QDmA2uvCZKFGanJLJFFXA
     short-id: 1f8b5201
-- name: US_reality_3
-  type: vless
-  server: 108.181.3.68
-  port: 19873
-  uuid: 288eab91-a2a9-4099-bcfd-ae057ec0d56e
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
-    short-id: 694212ed
-- name: TW_reality_4
+- name: TW_reality_3
   type: vless
   server: 1.162.51.106
   port: 37898
@@ -409,22 +409,24 @@ proxy-groups:
   type: select
   proxies:
   - 自动选择
-  - US_hysteria_01
-  - RU_hysteria_11
-  - FR_tuic_21
-  - VN_hysteria_31
-  - NL_hysteria_41
-  - NL_hysteria_51
-  - VN_hysteria_61
-  - FR_hysteria_71
-  - US_tuic_81
+  - US_mieru_01
+  - RU_mieru_11
+  - US_hysteria_21
+  - RU_hysteria_31
+  - FR_tuic_41
+  - VN_hysteria_51
+  - NL_hysteria_61
+  - NL_hysteria_71
+  - VN_hysteria_81
   - FR_hysteria_91
-  - US_hysteria_101
-  - US_hysteria2_111
-  - SG_hysteria2_112
-  - DE_hysteria2_113
-  - JP_hysteria2_114
-  - US_hysteria2_115
+  - US_tuic_101
+  - FR_hysteria_111
+  - US_hysteria_121
+  - US_hysteria2_131
+  - SG_hysteria2_132
+  - DE_hysteria2_133
+  - JP_hysteria2_134
+  - US_hysteria2_135
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -440,30 +442,31 @@ proxy-groups:
   - NL_reality_0
   - US_reality_1
   - RU_reality_2
-  - US_reality_3
-  - TW_reality_4
+  - TW_reality_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - US_hysteria_01
-  - RU_hysteria_11
-  - FR_tuic_21
-  - VN_hysteria_31
-  - NL_hysteria_41
-  - NL_hysteria_51
-  - VN_hysteria_61
-  - FR_hysteria_71
-  - US_tuic_81
+  - US_mieru_01
+  - RU_mieru_11
+  - US_hysteria_21
+  - RU_hysteria_31
+  - FR_tuic_41
+  - VN_hysteria_51
+  - NL_hysteria_61
+  - NL_hysteria_71
+  - VN_hysteria_81
   - FR_hysteria_91
-  - US_hysteria_101
-  - US_hysteria2_111
-  - SG_hysteria2_112
-  - DE_hysteria2_113
-  - JP_hysteria2_114
-  - US_hysteria2_115
+  - US_tuic_101
+  - FR_hysteria_111
+  - US_hysteria_121
+  - US_hysteria2_131
+  - SG_hysteria2_132
+  - DE_hysteria2_133
+  - JP_hysteria2_134
+  - US_hysteria2_135
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -479,8 +482,7 @@ proxy-groups:
   - NL_reality_0
   - US_reality_1
   - RU_reality_2
-  - US_reality_3
-  - TW_reality_4
+  - TW_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
