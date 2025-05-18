@@ -390,6 +390,20 @@ proxies:
   reality-opts:
     public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
     short-id: 694212ed
+- name: TW_reality_4
+  type: vless
+  server: 1.162.51.106
+  port: 37898
+  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+    short-id: e12d7fdb
 proxy-groups:
 - name: 节点选择
   type: select
@@ -427,6 +441,7 @@ proxy-groups:
   - US_reality_1
   - RU_reality_2
   - US_reality_3
+  - TW_reality_4
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -465,6 +480,7 @@ proxy-groups:
   - US_reality_1
   - RU_reality_2
   - US_reality_3
+  - TW_reality_4
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
