@@ -88,7 +88,7 @@ proxies:
   down: 55 Mbps
 - name: NL_hysteria_61
   type: hysteria
-  server: 51.158.205.126
+  server: 51.158.213.119
   port: 36194
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -100,7 +100,7 @@ proxies:
   down: 55 Mbps
 - name: NL_hysteria_71
   type: hysteria
-  server: 51.158.205.126
+  server: 51.158.213.119
   port: 36194
   auth-str: dongtaiwang.com
   sni: apple.com
