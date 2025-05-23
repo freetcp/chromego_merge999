@@ -86,9 +86,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: NL_hysteria_61
+- name: US_hysteria_61
   type: hysteria
-  server: 51.158.213.119
+  server: 198.40.52.27
   port: 36194
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -98,9 +98,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: NL_hysteria_71
+- name: US_hysteria_71
   type: hysteria
-  server: 51.158.213.119
+  server: 198.40.52.27
   port: 36194
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -258,11 +258,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: NL_hy_5
+- name: US_hy_5
   type: hysteria
-  server: 51.159.226.1
-  port: 14241
-  ports: 14241
+  server: 198.40.52.27
+  port: 36194
+  ports: 36194
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -359,8 +359,8 @@ proxy-groups:
   - RU_hysteria_31
   - FR_tuic_41
   - VN_hysteria_51
-  - NL_hysteria_61
-  - NL_hysteria_71
+  - US_hysteria_61
+  - US_hysteria_71
   - VN_hysteria_81
   - FR_hysteria_91
   - US_tuic_101
@@ -374,7 +374,7 @@ proxy-groups:
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
-  - NL_hy_5
+  - US_hy_5
   - NL_hy_6
   - US_hy_7
   - RU_hy2_0
@@ -395,8 +395,8 @@ proxy-groups:
   - RU_hysteria_31
   - FR_tuic_41
   - VN_hysteria_51
-  - NL_hysteria_61
-  - NL_hysteria_71
+  - US_hysteria_61
+  - US_hysteria_71
   - VN_hysteria_81
   - FR_hysteria_91
   - US_tuic_101
@@ -410,7 +410,7 @@ proxy-groups:
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
-  - NL_hy_5
+  - US_hy_5
   - NL_hy_6
   - US_hy_7
   - RU_hy2_0
