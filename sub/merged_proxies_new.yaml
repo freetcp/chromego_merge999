@@ -198,7 +198,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: US_hysteria2_134
+- name: JP_hysteria2_134
   type: hysteria2
   server: hyjp.freews.eu.org
   port: 38445
@@ -369,7 +369,7 @@ proxy-groups:
   - US_hysteria2_131
   - SG_hysteria2_132
   - DE_hysteria2_133
-  - US_hysteria2_134
+  - JP_hysteria2_134
   - US_hysteria2_135
   - RU_hy_0
   - RU_hy_1
@@ -405,7 +405,7 @@ proxy-groups:
   - US_hysteria2_131
   - SG_hysteria2_132
   - DE_hysteria2_133
-  - US_hysteria2_134
+  - JP_hysteria2_134
   - US_hysteria2_135
   - RU_hy_0
   - RU_hy_1
