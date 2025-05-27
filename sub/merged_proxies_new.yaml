@@ -171,7 +171,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: US_hysteria2_131
+- name: HK_mieru_131
+  type: mieru
+  server: 175.29.23.45
+  port: 28855
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: US_mieru_132
+  type: mieru
+  server: 45.150.165.84
+  port: 8067
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: US_hysteria2_133
   type: hysteria2
   server: hyus2.freews.eu.org
   port: 31218
@@ -180,7 +194,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: SG_hysteria2_132
+- name: SG_hysteria2_134
   type: hysteria2
   server: hysp.freews.eu.org
   port: 49413
@@ -189,7 +203,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: DE_hysteria2_133
+- name: DE_hysteria2_135
   type: hysteria2
   server: hyde.freews.eu.org
   port: 44262
@@ -198,7 +212,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: JP_hysteria2_134
+- name: JP_hysteria2_136
   type: hysteria2
   server: hyjp.freews.eu.org
   port: 38445
@@ -207,7 +221,7 @@ proxies:
   skip-cert-verify: true
   fast-open: false
   ip-version: dual
-- name: US_hysteria2_135
+- name: US_hysteria2_137
   type: hysteria2
   server: hyus.freews.eu.org
   port: 36726
@@ -366,11 +380,13 @@ proxy-groups:
   - US_tuic_101
   - FR_hysteria_111
   - US_hysteria_121
-  - US_hysteria2_131
-  - SG_hysteria2_132
-  - DE_hysteria2_133
-  - JP_hysteria2_134
-  - US_hysteria2_135
+  - HK_mieru_131
+  - US_mieru_132
+  - US_hysteria2_133
+  - SG_hysteria2_134
+  - DE_hysteria2_135
+  - JP_hysteria2_136
+  - US_hysteria2_137
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -402,11 +418,13 @@ proxy-groups:
   - US_tuic_101
   - FR_hysteria_111
   - US_hysteria_121
-  - US_hysteria2_131
-  - SG_hysteria2_132
-  - DE_hysteria2_133
-  - JP_hysteria2_134
-  - US_hysteria2_135
+  - HK_mieru_131
+  - US_mieru_132
+  - US_hysteria2_133
+  - SG_hysteria2_134
+  - DE_hysteria2_135
+  - JP_hysteria2_136
+  - US_hysteria2_137
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
