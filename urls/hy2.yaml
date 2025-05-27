@@ -1,4 +1,18 @@
 proxies:
+  - name: HK_mieru
+    type: mieru
+    server: 175.29.23.45
+    port: 28855
+    transport: TCP
+    username: dongtaiwang.com
+    password: dongtaiwang.com
+  - name: US_mieru
+    type: mieru
+    server: 45.150.165.84
+    port: 8067
+    transport: TCP
+    username: dongtaiwang.com
+    password: dongtaiwang.com
   - name: hy2_us2
     type: hysteria2
     server: hyus2.freews.eu.org
@@ -49,6 +63,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - HK_mieru
+      - US_mieru
       - hy2_us2
       - hy2_SP
       - hy2_de
@@ -60,6 +76,8 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
+      - HK_mieru
+      - US_mieru
       - hy2_us2
       - hy2_SP
       - hy2_de
