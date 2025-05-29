@@ -324,7 +324,7 @@ proxies:
   skip-cert-verify: true
 - name: RU_hy2_1
   type: hysteria2
-  server: hy2.694463.xyz
+  server: 46.29.163.171
   port: 30033
   password: dongtaiwang.com
   fast-open: true
