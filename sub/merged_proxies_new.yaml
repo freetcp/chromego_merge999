@@ -316,7 +316,7 @@ proxies:
   - h3
 - name: RU_hy2_0
   type: hysteria2
-  server: hy2.694463.xyz
+  server: 45.129.2.108
   port: 30033
   password: dongtaiwang.com
   fast-open: true
