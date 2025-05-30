@@ -185,51 +185,6 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: US_hysteria2_133
-  type: hysteria2
-  server: hyus2.freews.eu.org
-  port: 31218
-  tls: false
-  password: freetcp.02580258
-  skip-cert-verify: true
-  fast-open: false
-  ip-version: dual
-- name: SG_hysteria2_134
-  type: hysteria2
-  server: hysp.freews.eu.org
-  port: 49413
-  tls: false
-  password: freetcp.02580258
-  skip-cert-verify: true
-  fast-open: false
-  ip-version: dual
-- name: DE_hysteria2_135
-  type: hysteria2
-  server: hyde.freews.eu.org
-  port: 44262
-  tls: false
-  password: freetcp.02580258
-  skip-cert-verify: true
-  fast-open: false
-  ip-version: dual
-- name: JP_hysteria2_136
-  type: hysteria2
-  server: hyjp.freews.eu.org
-  port: 38445
-  tls: false
-  password: freetcp.02580258
-  skip-cert-verify: true
-  fast-open: false
-  ip-version: dual
-- name: US_hysteria2_137
-  type: hysteria2
-  server: hyus.freews.eu.org
-  port: 36726
-  tls: false
-  password: freetcp.02580258
-  skip-cert-verify: true
-  fast-open: false
-  ip-version: dual
 - name: RU_hy_0
   type: hysteria
   server: 185.22.155.71
@@ -382,11 +337,6 @@ proxy-groups:
   - US_hysteria_121
   - HK_mieru_131
   - US_mieru_132
-  - US_hysteria2_133
-  - SG_hysteria2_134
-  - DE_hysteria2_135
-  - JP_hysteria2_136
-  - US_hysteria2_137
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
@@ -420,11 +370,6 @@ proxy-groups:
   - US_hysteria_121
   - HK_mieru_131
   - US_mieru_132
-  - US_hysteria2_133
-  - SG_hysteria2_134
-  - DE_hysteria2_135
-  - JP_hysteria2_136
-  - US_hysteria2_137
   - RU_hy_0
   - RU_hy_1
   - FR_hy_4
