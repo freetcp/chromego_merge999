@@ -18,6 +18,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y wget
 
+    - name: Download Database
+      env:
+        MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}   
       run: |
         # 下载并解压数据库
         wget -O GeoLite2-City.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=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&suffix=tar.gz"
