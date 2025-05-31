@@ -18,21 +18,12 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y wget
 
-    - name: Download Database
-      env:
-        IP2LOCATION_LITE_TOKEN: ${{ secrets.IP2LOCATION_LITE_TOKEN }}
-        MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}
       run: |
         # 下载并解压数据库
         wget -O GeoLite2-City.tar.gz "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=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&suffix=tar.gz"
         tar -xzf GeoLite2-City.tar.gz --strip-components=1
         # mv GeoLite2-City.mmdb ./  # 将数据库文件移到根目录
         rm -f GeoLite2-City.tar.gz COPYRIGHT.txt LICENSE.txt README.txt  # 删除其余文件
-
-        wget -O DB3LITEBIN.zip "https://www.ip2location.com/download/?token=${IP2LOCATION_LITE_TOKEN}&file=DB3LITEBIN"
-        unzip -o DB3LITEBIN.zip
-        rm -f DB3LITEBIN.zip *_LITE.TXT
-        
 
     - name: Commit and Push Updated Database to GitHub
       run: |
